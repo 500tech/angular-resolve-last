@@ -36,14 +36,21 @@ angular.module('myModule').controller('myController', ['resolveLast', function()
 once resolveLast is injected it can be used around angular promises, or functions that return a promise.
 You have to give a name to the batch in order for resolveLast to associate these calls together:
 ```
-function search() {
-  resolveLast('search',  $http.get('api/search'))
+function search(term) {
+  resolveLast('searchAutocomplete',  $http.get('api/search?q=' + term))
   .then(function() {
     console.log('search complete')
   })
 }
 ```
-Calling search() 4 times in a row will result in only 1 output line to the console:
+Calling:
+```
+search('so')
+search('some')
+search('someth')
+search('something')
+```
+will result in only 1 output line to the console:
 ```
 search complete
 ```

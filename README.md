@@ -14,6 +14,11 @@ install using bower:
 bower install angular-resolve-last
 ```
 
+include the dist/resolve_last.js file from your index.html:
+```
+<script src="bower_components/angular-resolve-last/dist/resolve_last.js"></script>
+```
+
 ### Inject
 include the 'angular-resolve-last' module in your dependencies:
 ```

@@ -1,0 +1,32 @@
+{
+  "name": "angular-resolve-last",
+  "version": "0.0.0",
+  "authors": [
+    "adam klein <adam@500tech.com>"
+  ],
+  "description": "resolveLast let's you handle only the last promise that was resolved during a batch of actions",
+  "main": "resolve_last.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "resolve",
+    "last",
+    "promises",
+    "cancel",
+    "http",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/500tech/angualr-resolve-last",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.21"
+  }
+}
